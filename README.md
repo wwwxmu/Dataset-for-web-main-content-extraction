@@ -15,8 +15,8 @@
 
 ##### 具体数据情况
 
-| :Domains: |:Pages:| :Nodes:|:Clean:|:Dirty:|
-| --- | --- | --- | --- | --- |
+| Domains |Pages| Nodes|Clean|Dirty|
+| :---: | :---: | :---: | :---: | :---: |
 | economy.caijing.com.cn | 102|11782|2060|9722|
 |news.hexun.com|103|6074|2162|3912|
 |www.eeo.com.cn|102|7166|2437|4729|
