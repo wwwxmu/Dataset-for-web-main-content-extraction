@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <script>
+!function () {
+    //文章页跳转
+    var getQueryString = function ( field, url ) {
+        var href = url ? url : window.location.href;
+        var reg = new RegExp( '[?&]' + field + '=([^&#]*)', 'i' );
+        var string = reg.exec(href);
+        return string ? string[1] : null;
+    };
+
+    var referrer = getQueryString('uri')
+    if(referrer){
+        var result = referrer.match(/new\.qq\.com\/(omn|cmsn)\/(.*?)\.html/)
+        if(result){
+        	var a =  document.createElement('a'); 
+        	a.href = referrer
+            var path = result[1]
+            var id = result[2]
+            location.href='/'+path+'/'+id+a.search
+        }else{
+            location.href='//www.qq.com/babygohome/';
+        }
+    }
+}()
+</script>
+  </head>
+  <body>
+  </body>
+</html><!--[if !IE]>|xGv00|140b671ee3dde1f4cdc2075d9ec3611a<![endif]-->
